@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body{
+    height: 100%;
+    font-family: monospace;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+/*HEADER*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    transition: 0.7s;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+header.down{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: black;
+}
+@media (max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .laeminuesa{justify-content: center;}
+}
+.laeminuesa{
+    font-size:x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+}
+
+/* DROPDOWN MENU SIN ACABAR INICIA */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    display: inline-block;
+}
+header ul li a {
+    
+    position: relative;
+    font-family: monospace;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+
+}
+
+/* DROPDOWN MENU SIN ACABAR ACACBA */
+
+.logo{
+    letter-spacing: 0.25em;
+    font-size: 220%;
+    color:white;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*.insta {margin-left: auto;  Empuja este elemento hacia la derecha 
+        padding: 1%;}*/
+
+.insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 11%;
+}
+.header{
+    /*Background*/
+    background-image: url(main.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    /*Background ends*/
+
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+/*HEADER ACABA*/
+
+.box-container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 5%;
+    color:white;
+    border: 50px;
+    border-color: white;
+
+    padding-bottom: 4%;
+}
+
+.box{
+    background-color: rgb(115,107,121);
+    text-align: center;
+    border-radius: 1%;
+    color:white;
+    -webkit-transition: 400ms ease 100ms;
+    -moz-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+    padding-bottom: 1%;
+}
+
+
+
+
+
+#bandw{background-color: grey;}
+#bandw:hover{background-color: white;}
+
+#estonia{background-color: rgb(141, 139, 85);}
+#estonia:hover{background-color: white;}
+
+#santander{background-color: #67a2b4;}
+#santander:hover{background-color: white;}
+
+
+
+
+
+
+.box:hover{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    color: black;
+}
+
+.box img {
+    -webkit-transition: 400ms ease 100ms;
+    -moz-transition: 400ms ease 100ms;
+    transition: 400ms ease 100ms;
+}
+
+
+.text{
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: large;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#footer{
+    background-color:black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+

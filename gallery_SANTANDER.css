@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black; /*aprender a poner degradados*/
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+img:hover{
+    cursor:zoom-in;
+}
+
+
+img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.pictures{
+    margin-top: 3%;
+    column-count: 3;
+    columns: 3 325px;
+    gap: 1%;
+    margin-left: 6%;
+    margin-right: 6%;
+    
+}
+
+
+
+
+/*HEADER*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    transition: 0.7s;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+header.down{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: black;
+}
+@media (max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .laeminuesa{justify-content: center;}
+}
+.laeminuesa{
+    font-size:x-large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    font-family: monospace;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    letter-spacing: 0.25em;
+    font-size: 9vh;
+    color:white;
+    background-attachment: fixed;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header{
+    /*Background*/
+    background-image: url(SANTANDER/main.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*Background ends*/
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height:100vh;
+    color: white;
+    letter-spacing: 0.13em;
+    text-align: center;
+
+}
+
+/*HEADER ACABA*/
+
+#footer{
+    background-color:black;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+hr {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}

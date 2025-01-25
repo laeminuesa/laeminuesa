@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="lightbox.css"> <!--Vincula con el archivo descargado de lightbox-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="icon" href="logo.ico">
+    <title>laeminuesa</title>
+</head>
+<body>
+    
+
+                    <!--IMG 1 --> 
+                <!--href="la imagen que aparece ampliada", data-lightbox="la familia de fotos a la que pertenece", data-title="Información que aparece"-->
+
+
+    <!--TODOLIST:
+    
+    DISEÑAR TARJETAS
+    EFECTO HOOVER TARJETAS
+    BOTONES TARJETAS
+    ESPAÑOL E INGLES
+    HEADER CAMBIANTE 
+    LINKS DEL PREHEADER
+    OPTIMIZAR CARGA DE IMÁGENES
+    MENÚ DESPLEGABLE EN EL HEADER
+    DISEÑO BOTTOM PAGE
+    -->
+
+    <!--A mejorar para el futuro:
+    
+        Poner el logo de insta en el hheader
+    -->
+
+    <!--Header-->
+    <header>
+        <a href="index.html" class="laeminuesa">laeminuesa</a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Galerias</a></li>
+                    <!--<ul class="dropdown">
+                        <li><a href="b&w.html">B&W pictures</a></li>
+                        <li><a href="estonia.html">Estonia</a></li>
+                        <li><a href="santander.html">Santander</a></li>
+                    </ul>-->
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--<a class="insta" href="https://www.instagram.com/laeminuesa/"> <img src="./images/instagram.png" height="40px"></a>-->
+
+    </header>
+
+    <div class="header">
+        <div class="logo name">laeminuesa's photography gallery</div>
+        
+    </div>
+    <!--Header acaba-->
+    
+    <!--IMG -->
+
+    <div class="box-container">
+
+        <a class="box" id="bandw" href="b&w.html">
+            <img  src="./images/h1.jpg" draggable="false"> 
+            <h2>B&W Film</h2>
+            <h3>More</h3>
+        </a>
+
+        <a class="box" id="estonia" href="estonia.html">
+            <img src="./ESTONIA/estonia14.jpg" draggable="false">
+            <h2>Estonia</h2>
+            <h3>More</h3>
+
+        </a>
+
+        <a class="box" id="santander" href="santander.html">
+            <img src="./SANTANDER/main.jpg" draggable="false">
+            <h2>Santander</h2>
+            <h3>More</h3>
+
+        </a>
+
+        <a class="box">
+            <img  src="./images/h4.jpg" draggable="false">
+            <h2>En progreso</h2>
+            <h3>More</h3>
+            
+        </a>
+
+        <a class="box">
+
+            <img src="./images/h7.jpg" draggable="false">
+            <h2>En progreso</h2>
+            <h3>More</h3>
+
+        </a>
+        
+
+        <a class="box">
+
+            <img src="images/h6.jpg" draggable="false">
+            <h2>En progreso</h2>
+            <h3>More</h3>
+
+        </a>
+
+    </div>
+
+    <hr>
+
+    <footer id="footer">
+        
+        <a href="https://www.instagram.com/laeminuesa/"> @laeminuesa</a>
+
+    </footer>
+
+    <script src="lightbox-plus-jquery.js"></script> <!--Script que permite ampliar imagenes-->
+
+    <script type="text/javascript"> 
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("down", window.scrollY> 275);
+        })
+    </script>
+
+</body>
+</html>
+       
