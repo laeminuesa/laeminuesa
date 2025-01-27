@@ -93,7 +93,7 @@ header ul li a {
 }
 .logo{
     letter-spacing: 0.25em;
-    font-size: 9vh;
+    font-size: 200%;
     color:white;
     background-attachment: fixed;
 }
